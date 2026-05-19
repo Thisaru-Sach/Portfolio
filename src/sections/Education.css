@@ -1,0 +1,125 @@
+.education-section {
+  padding: var(--section-gap) 0;
+  background: var(--navy-mid);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.edu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.sub-label {
+  color: var(--muted);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.edu-card {
+  background: var(--navy);
+  border: 1px solid var(--border);
+  padding: 28px;
+}
+
+.edu-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.edu-degree {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--off-white);
+  margin-bottom: 4px;
+}
+
+.edu-inst {
+  font-size: 0.83rem;
+  color: var(--muted);
+}
+
+.edu-period {
+  color: var(--accent);
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
+.edu-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.edu-notes li {
+  font-size: 0.83rem;
+  color: var(--muted);
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.edu-notes li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.7rem;
+}
+
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cert-card {
+  background: var(--navy);
+  border: 1px solid var(--border);
+  padding: 20px 24px;
+  transition: border-color 0.2s;
+}
+
+.cert-card:hover { border-color: rgba(200,169,110,0.3); }
+
+.cert-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.cert-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.cert-status {
+  font-size: 0.65rem;
+  color: var(--accent);
+  background: rgba(200,169,110,0.1);
+  border: 1px solid rgba(200,169,110,0.25);
+  padding: 3px 9px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.cert-note {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  .edu-grid { grid-template-columns: 1fr; }
+}
